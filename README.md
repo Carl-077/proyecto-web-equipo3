@@ -83,8 +83,7 @@ Se analizan los **retos técnicos, regulatorios y éticos**, así como los benef
 ---
 
 ## 🚀 Cómo ver el sitio  
-👉[
-](https://github.com/Carl-077/proyecto-web-equipo3)
+👉(https://github.com/Carl-077/proyecto-web-equipo3)
 
 ---
 
