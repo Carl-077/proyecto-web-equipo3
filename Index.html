@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La Inteligencia Artificial en el sector automotriz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Fondo de página web -->
+  <div class="neural-background"></div>
+  <!-- Barra de navegación glass -->
+  <header class="glass-header">
+    <nav class="nav-container">
+      <a href="#" class="logo">MiProyecto</a>
+      <label for="menu" class="mobile-menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+      <input type="checkbox" id="menu" />
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#ia">IA</a></li>
+        <li><a href="#automotriz">Automotriz</a></li>
+        <li><a href="#retos">Retos</a></li>
+        <li><a href="#actualidad">Actualidad</a></li>
+        <li><a href="#futuro">Futuro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Landing page -->
+  <div class="alineado-con-nav">
+    <div class="header-content" id="inicio">
+      <div class="header-txt">
+        <h1>La Inteligencia Artificial</h1>
+        <h2>en el sector automotriz</h2>
+        <p>¿Es posible un mundo con vehículos totalmente autónomos?</p>
+        <a href="#ia" class="btn">Conoce más</a>
+      </div>
+      <div class="header-img">
+        <img src="img/vehiculoAutonomo.jpg" alt="Vehículo autónomo" width="700" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido de la página web -->
+  <main>
+    <section id="ia" class="glass-section">
+      <div class="glass-text">
+        <h2>¿Qué es la Inteligencia Artificial?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+
+    <section id="automotriz" class="glass-section">
+      <div class="glass-text">
+        <h2>Aplicaciones en el sector automotriz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+    
+    <section id="retos" class="glass-section">
+      <div class="glass-text">
+        <h2>Retos actuales</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem nec justo tincidunt tincidunt. Sed euismod, nisl vel fermentum tincidunt, nunc sapien tincidunt justo, nec facilisis lorem nulla nec velit. Integer ac turpis nec justo convallis tincidunt.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+
+    <section id="actualidad" class="glass-section">
+      <div class="glass-text">
+        <h2>Estado actual de la tecnología</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+
+    <section id="futuro" class="glass-section">
+      <div class="glass-text">
+        <h2>Visión a futuro</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec lorem nec justo tincidunt tincidunt. Sed euismod, nisl vel fermentum tincidunt, nunc sapien tincidunt justo, nec facilisis lorem nulla nec velit. Integer ac turpis nec justo convallis tincidunt.</p>
+      </div>
+      <div class="glass-image">
+        <img src="img/vehiculoAutonomo.jpg" alt="Representación de IA" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="footer-content">
+      <p>Derechos Reservados &copy; 2025 Equipo 3 </p>
+      <p>Proyectos de Ingeniería I Grupo C.</p>
+      <p>Contacto: 203842@iberopuebla.mx</p>
+    </div>
+  </footer>
+
+  <!-- Scroll -->
+  <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links li a");
+  
+  window.addEventListener("scroll", () => {
+    let current = null;
+    let scrollY = window.scrollY;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+      
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (current && link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+  </script>
+
+  <script>
+  document.fonts.ready.then(() => {
+    document.body.classList.add('fonts-loaded');
+  });
+  </script>
+
+</body>
+</html>
