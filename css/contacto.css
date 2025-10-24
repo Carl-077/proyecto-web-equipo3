@@ -1,0 +1,163 @@
+/* Contenedor glass general */
+.glass-section.equipo {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  color: #1F0C42;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Título separado visualmente */
+.equipo-header {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left; /* ← alinea el contenido a la izquierda */
+}
+
+.equipo-header h2 {
+  background: linear-gradient(to bottom, #ffffff, #cce6ff);
+  color: #0044aa;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0; /* ← elimina márgenes que lo centren */
+}
+
+/* Grid horizontal de fotos */
+.team-grid {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.photo-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+.photo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.formulario-retro {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  color: #1F0C42;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-retro h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0044aa;
+  text-align: left;
+}
+
+.formulario-retro form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.formulario-retro label {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.formulario-retro input,
+.formulario-retro textarea {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;               /* Ocupa todo el ancho disponible */
+  max-width: 500px;          /* Elimina cualquier límite de ancho */
+  display: block;            /* Asegura que no se limiten por inline */
+  margin-left: 0;
+  margin-right: auto; 
+  box-sizing: border-box;           /* Centra los campos si el contenedor es más ancho */
+}
+
+.formulario-retro button {
+  background-color: #044ebe;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.formulario-retro button:hover {
+  background-color: #023685;
+}
+
+.formulario-retro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.formulario-columna {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.formulario-imagen {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.formulario-imagen img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}

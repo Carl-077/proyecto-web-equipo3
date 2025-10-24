@@ -1,0 +1,64 @@
+/* Sección tipo glass */
+.glass-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 35px auto;
+  color: #1F0C42;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.glass-section h2 {
+  background: linear-gradient(to bottom, #ffffff, #cce6ff);
+  color: #0044aa;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 800;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.glass-text {
+  flex: 1 1 50%;
+}
+
+.glass-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.glass-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffffd7;
+  color: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
