@@ -90,7 +90,7 @@ Se analizan los **retos técnicos, regulatorios y éticos**, así como los benef
 ## 👥 Equipo  
 - **Líder de proyecto**: Carlo Corona Estrada 204213  
 - **Diseño/UX**: Santiago Ramírez Saldaña 204507
-- **Dev Front (HTML/CSS)**: Ángel Anronio Chávez Garcia 203842
+- **Dev Front (HTML/CSS)**: Ángel Antonio Chávez Garcia 203842
 - **Editor de contenido**: Federico Vargas Lopez 204931
  
 
