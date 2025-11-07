@@ -32,6 +32,7 @@
 
 .glass-text p {
   font-size: 18px;
+  text-align: justify;
   line-height: 1.6;
   color: #ffffff;
 }
@@ -61,4 +62,5 @@
 
 .footer-content p {
   margin: 10px 0;
+
 }
