@@ -27,7 +27,7 @@
 }
 
 .glass-text {
-  flex: 1 1 50%;
+  display: block;
 }
 
 .glass-text p {
@@ -37,7 +37,6 @@
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 20px;
-  display: block;
 }
 
 .glass-image {
@@ -67,6 +66,7 @@
   margin: 10px 0;
 
 }
+
 
 
 
