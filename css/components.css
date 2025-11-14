@@ -33,7 +33,7 @@
 .glass-text p {
   font-size: 18px;
   text-align: justify;
-  line-height: 1.4;
+  line-height: 1;
   color: #ffffff;
   margin-bottom: 5px;
 }
@@ -65,6 +65,7 @@
   margin: 10px 0;
 
 }
+
 
 
 
