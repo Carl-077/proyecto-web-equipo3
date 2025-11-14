@@ -13,7 +13,10 @@ html {
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   background: transparent;
   position: relative;
   z-index: 0;
@@ -262,10 +265,6 @@ main section h2 {
 }
 
 main section p {
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
   font-size: 18px;
   line-height: 1.6;
   color: #333333;
@@ -299,3 +298,4 @@ section {
   margin-top: 120px;
 
 }
+
