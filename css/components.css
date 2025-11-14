@@ -31,7 +31,6 @@
 }
 
 .glass-text p {
-  background-color: rgba(255, 0, 0, 0.2);
   font-size: 18px;
   text-align: justify;
   line-height: 1.5;
@@ -68,6 +67,7 @@
   margin: 10px 0;
 
 }
+
 
 
 
