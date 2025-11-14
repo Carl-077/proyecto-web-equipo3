@@ -35,7 +35,9 @@
   text-align: justify;
   line-height: 1.5;
   color: #ffffff;
+  margin-top: 0;
   margin-bottom: 20px;
+  display: block;
 }
 
 .glass-image {
@@ -65,4 +67,5 @@
   margin: 10px 0;
 
 }
+
 
