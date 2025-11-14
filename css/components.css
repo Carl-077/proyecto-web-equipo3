@@ -33,9 +33,9 @@
 .glass-text p {
   font-size: 18px;
   text-align: justify;
-  line-height: 1;
+  line-height: 1.5;
   color: #ffffff;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
 }
 
 .glass-image {
@@ -65,3 +65,4 @@
   margin: 10px 0;
 
 }
+
