@@ -27,15 +27,14 @@
 }
 
 .glass-text {
-  display: block;
+  flex: 1 1 50%;
 }
 
 .glass-text p {
   font-size: 18px;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #ffffff;
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -67,9 +66,15 @@
 
 }
 
+  background-color: #ffffffd7;
+  color: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 16px;
+  margin-top: 50px;
+}
 
+.footer-content p {
+  margin: 10px 0;
 
-
-
-
-
+}
