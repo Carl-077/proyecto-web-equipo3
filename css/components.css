@@ -18,10 +18,13 @@
   color: #0044aa;
   padding: 15px 25px;
   border-radius: 15px;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 800;
+  font-family: "Special Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-size: 32px;
-  text-transform: uppercase;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
   margin-bottom: 20px;
   width: fit-content;
 }
@@ -78,6 +81,7 @@
   margin: 10px 0;
 
 }
+
 
 
 
