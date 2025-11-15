@@ -13,40 +13,38 @@
   gap: 30px;
 }
 
+/* Títulos de secciones temáticas */
 .glass-section h2 {
   background: linear-gradient(to bottom, #ffffff, #cce6ff);
   color: #0044aa;
   padding: 15px 25px;
   border-radius: 15px;
-  font-family: "Special Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+  font-family: "Special Gothic", sans-serif; /* tipografía para títulos */
+  font-weight: 600; /* SemiBold */
   font-size: 32px;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 87.5;
+  text-transform: uppercase;
   margin-bottom: 20px;
   width: fit-content;
 }
 
+/* Contenedor de texto */
 .glass-text {
   flex: 1 1 50%;
 }
 
+/* Párrafos del cuerpo */
 .glass-text p {
   font-size: 18px;
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-family: "Merriweather", serif; /* tipografía para párrafos */
+  font-weight: 500; /* Medium */
   text-align: justify;
   line-height: 1.6;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
+/* Contenedor de imagen */
 .glass-image {
   flex: 1 1 45%;
   display: flex;
@@ -72,23 +70,4 @@
 
 .footer-content p {
   margin: 10px 0;
-
 }
-
-  background-color: #ffffffd7;
-  color: #000000;
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 16px;
-  margin-top: 50px;
-}
-
-.footer-content p {
-  margin: 10px 0;
-
-}
-
-
-
-
-
