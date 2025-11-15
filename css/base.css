@@ -1,38 +1,45 @@
-/* Fuentes y reset */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700;800&family=Barlow:wght@400;600;800&display=swap');
+/* ===========================
+   Fuentes y reset
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700;800&family=Barlow:wght@400;600;800&display=swap'); /* Fuente para títulos principales */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@87.5,400..700&display=swap'); /* Fuente variable para logotipo y navegación */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap'); /* Fuente para cuerpo de texto */
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
+  margin: 0;                 /* Elimina márgenes por defecto */
+  padding: 0;                /* Elimina relleno por defecto */
+  text-decoration: none;     /* Quita subrayado en enlaces */
+  list-style: none;          /* Quita viñetas en listas */
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;   /* Desplazamiento suave al navegar */
 }
 
 body {
-  background: transparent;
-  position: relative;
-  z-index: 0;
+  font-family: 'Merriweather', sans-serif; /* Tipografía global */
+  background: transparent;                 /* Fondo transparente */
+  position: relative;                      /* Contexto de posicionamiento */
+  z-index: 0;                              /* Nivel de apilamiento base */
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%;           /* Las imágenes nunca exceden el ancho del contenedor */
 }
 
-/* Fondo animado */
+/* ===========================
+   Fondo animado
+   =========================== */
 .neural-background {
-  position: fixed;
+  position: fixed;           /* Fijo en toda la pantalla */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  width: 100%;               /* Ocupa todo el ancho */
+  height: 100%;              /* Ocupa todo el alto */
+  z-index: -1;               /* Detrás del contenido */
   background: linear-gradient(150deg, #0f1440 0%, #1a1f4e 25%, #0033aa 50%, #0f1440 100%);
-  background-size: 300% 300%;
-  animation: gradientShift 20s ease-in-out infinite;
+  background-size: 300% 300%; /* Escala para animación */
+  animation: gradientShift 20s ease-in-out infinite; /* Animación de gradiente */
 }
 
 @keyframes gradientShift {
@@ -41,13 +48,15 @@ img {
   100% { background-position: 0% 50%; }
 }
 
-/* Navegación */
+/* ===========================
+   Navegación (header tipo glass)
+   =========================== */
 .glass-header {
-  position: fixed;
+  position: fixed;           /* Barra fija arriba */
   top: 0;
   margin-top: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* Centrada horizontalmente */
   width: 96%;
   max-width: 1200px;
   height: 70px;
@@ -55,32 +64,35 @@ img {
   display: flex;
   align-items: center;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05); /* Fondo semitransparente */
+  backdrop-filter: blur(20px);           /* Efecto glass */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 25px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Logo a la izquierda, links a la derecha */
   align-items: center;
   width: 100%;
 }
 
 .logo {
+  font-family: "Special Gothic", sans-serif; /* Tipografía del logo */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho */
+  font-style: normal;
   font-size: 24px;
-  font-weight: bold;
   color: #00aaff;
   text-transform: uppercase;
-  opacity: 0;
+  opacity: 0; /* Inicialmente oculto para animación */
 }
 
 .glass-header ul li {
-  opacity: 0;
+  opacity: 0; /* Ocultos para animación */
 }
 
+/* Animaciones al cargar fuentes */
 body.fonts-loaded .logo {
   animation: fadeInLogo 0.6s ease-out forwards;
 }
@@ -101,29 +113,34 @@ body.fonts-loaded .glass-header ul li {
 
 .nav-links {
   display: flex;
-  gap: 20px;
-  justify-content: flex-end;
+  gap: 20px;                 /* Espacio entre enlaces */
+  justify-content: flex-end; /* Alineados a la derecha */
   flex: 1;
 }
 
 .nav-links li a {
+  font-family: "Special Gothic", sans-serif; /* Tipografía de enlaces */
+  font-variation-settings: "wght" 700, "wdth" 87.5;
+  font-style: normal;
   color: #ffffff;
-  font-weight: 600;
   font-size: 0.95rem;
+  text-transform: uppercase;
   padding: 10px 15px;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Transición suave */
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  background-color: rgba(0, 100, 255, 0.2);
-  color: #00aaff;
+  background-color: rgba(0, 100, 255, 0.2); /* Fondo al pasar el mouse */
+  color: #00aaff;                           /* Color destacado */
 }
 
-/* Menú móvil */
+/* ===========================
+   Menú móvil
+   =========================== */
 .mobile-menu-toggle {
-  display: none;
+  display: none;             /* Oculto en escritorio */
   flex-direction: column;
   cursor: pointer;
   padding: 8px;
@@ -141,12 +158,12 @@ body.fonts-loaded .glass-header ul li {
 }
 
 input[type="checkbox"] {
-  display: none;
+  display: none; /* Checkbox oculto para toggle */
 }
 
 @media (max-width: 1000px) {
   .nav-links {
-    display: none;
+    display: none;           /* Oculta enlaces en móvil */
     flex-direction: column;
     background: rgba(0, 0, 0, 0.95);
     position: absolute;
@@ -158,18 +175,20 @@ input[type="checkbox"] {
   }
 
   #menu:checked ~ .nav-links {
-    display: flex;
+    display: flex;           /* Muestra enlaces al activar toggle */
   }
 
   .mobile-menu-toggle {
-    display: flex;
+    display: flex;           /* Botón hamburguesa visible en móvil */
   }
 }
 
-/* Layout general */
+/* ===========================
+   Layout general
+   =========================== */
 .alineado-con-nav {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto;            /* Centrado horizontal */
 }
 
 .header-content {
@@ -180,8 +199,8 @@ input[type="checkbox"] {
 }
 
 .header-txt {
-  flex-basis: 50%;
-  padding-right: 20%;
+  flex-basis: 50%;           /* Ocupa mitad del ancho */
+  padding-right: 20%;        /* Espacio a la derecha */
 }
 
 .header-txt h1 {
@@ -229,67 +248,5 @@ input[type="checkbox"] {
 
 .btn:hover {
   background: linear-gradient(135deg, #0022aa 0%, #00eaff 100%);
-  box-shadow: 0 0 30px rgba(0, 200, 255, 0.4);
-}
-
-.header-img {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-left: 20px;
-}
-
-/* Secciones generales */
-main section {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  padding: 60px 40px;
-  max-width: 1200px;
-  margin: 35px auto;
-  color: #1F0C42;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-main section h2 {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  color: #4d13ee;
-}
-
-main section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333333;
-}
-
-@media(max-width: 768px) {
-  main section {
-    padding: 60px 15px;
-  }
-
-  main section h2 {
-    font-size: 28px;
-  }
-
-  main section p {
-    font-size: 16px;
-  }
-}
-
-/* Scroll */
-#inicio {
-  scroll-margin-top: 140px;
-}
-
-section {
-  scroll-margin-top: 120px;
-}
-
-#equipo {
-  scroll-margin-top: 120px;
-  margin-top: 120px;
+  box-shadow: 0 0 30px
 }
