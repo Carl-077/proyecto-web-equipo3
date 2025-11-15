@@ -254,11 +254,14 @@ main section {
 }
 
 main section h2 {
-  font-size: 36px;
-  font-weight: 800;
+  font-family: "Special Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
   margin-bottom: 20px;
-  text-transform: uppercase;
-  font-family: "Barlow Semi Condensed", sans-serif;
   color: #4d13ee;
 }
 
@@ -296,6 +299,7 @@ section {
   margin-top: 120px;
 
 }
+
 
 
 
