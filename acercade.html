@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
+  <title>Acerca de</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/contacto.css" />
+  <link rel="stylesheet" href="css/acercade.css" />
 </head>
 <body>
-  <!-- Fondo de página web -->
   <div class="blue-background"></div>
-  <!-- Barra de navegación glass -->
+
   <header class="glass-header">
     <nav class="nav-container">
       <a href="index.html" class="logo">ISC Equipo 3</a>
@@ -33,22 +32,41 @@
   </header>
 
   <main>
-    <section class="glass-section formulario-retro" id="sugerencias">
-      <div class="formulario-columna">
-        <h2>Envíanos tus sugerencias</h2>
-        <form id="formulario">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" required>
-          <label for="correo">Correo electrónico:</label>
-          <input type="email" name="email" required>
-          <label for="mensaje">Comentario o sugerencia:</label>
-          <textarea name="mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
+    <!-- Contenedor glass para título y fotos con espaciado -->
+    <section class="glass-section" id="equipo">
+      <div class="glass-text">
+        <h3>Opinión</h3>
+        <h2>Aplicaciones en el sector automotriz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel sem nec sapien tincidunt tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus euismod, justo a facilisis tincidunt, lorem sapien tincidunt justo, nec fermentum nulla lorem nec velit.</p>
       </div>
       
-      <div class="formulario-imagen">
-        <img src="img/vehiculoAutonomo.jpg" alt="Imagen decorativa de sugerencias" />
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 1" />
+          </div>
+          <p class="nombre">Carlo Corona Estrada</p>
+        </div>
+        
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 2" />
+          </div>
+          <p class="nombre">Ángel Chávez García</p>
+        </div>
+        
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 3" />
+          </div>
+          <p class="nombre">Santiago Ramírez Saldaña</p>
+        </div>
+        <div class="team-member">
+          <div class="photo-circle">
+            <img src="img/persona.jpg" alt="Miembro del equipo 4" />
+          </div>
+          <p class="nombre">Federico Vargas López</p>
+        </div>
       </div>
     </section>
   </main>
@@ -81,32 +99,6 @@
     document.fonts.ready.then(() => {
       document.body.classList.add('fonts-loaded');
     });
-  </script>
-
-  <script>
-  const form = document.getElementById("formulario");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita el envío tradicional
-
-    const data = new FormData(form);
-
-    fetch("https://formspree.io/f/xwprgkbg", {
-      method: "POST",
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        window.location.href = "index.html"; // Redirige al index
-      } else {
-        alert("Hubo un error al enviar el formulario.");
-      }
-    }).catch(error => {
-      alert("Error de conexión.");
-    });
-  });
   </script>
 
 </body>
