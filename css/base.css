@@ -1,0 +1,165 @@
+/* ===========================
+   Fuentes y reset
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wdth,wght@75..125,400..700&display=swap'); /* Fuente global página*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap'); /* Fuente para cuerpo de texto */
+
+* {
+  margin: 0;                 /* Elimina márgenes por defecto */
+  padding: 0;                /* Elimina relleno por defecto */
+  text-decoration: none;     /* Quita subrayado en enlaces */
+  list-style: none;          /* Quita viñetas en listas */
+}
+
+html {
+  scroll-behavior: smooth;   /* Desplazamiento suave al navegar */
+}
+
+body {
+  font-size: 1rem; /* Tamaño de fuente cuerpo  */
+  font-family: "Special Gothic", sans-serif; /* Tipografía específica */
+  font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
+  font-variation-settings: "wght" 600, "wdth" 80; /* Peso y ancho personalizados (semibold, condensed) */
+
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1; /* Empuja el footer hacia abajo si hay poco contenido*/
+}
+
+img {
+  max-width: 100%;           /* Las imágenes nunca exceden el ancho del contenedor */
+}
+
+/* ===========================
+   Fondo animado
+   =========================== */
+.blue-background {
+  position: fixed;           /* Fijo en toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;               /* Ocupa todo el ancho */
+  height: 100%;              /* Ocupa todo el alto */
+  z-index: -1;               /* Detrás del contenido */
+  background: linear-gradient(150deg, #0f1440 0%, #1a1f4e 25%, #0033aa 50%, #0f1440 100%);
+  background-size: 300% 300%; /* Escala para animación */
+  animation: gradientShift 20s ease-in-out infinite; /* Animación de gradiente */
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===========================
+   Layout general
+   =========================== */
+.alineado-con-nav {
+  max-width: 1200px;
+  margin: 0 auto;            /* Centrado horizontal */
+}
+
+.header-content {
+  display: flex;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  align-items: center;
+}
+
+.header-txt {
+  flex-basis: 50%;           /* Ocupa mitad del ancho */
+  padding-right: 20%;        /* Espacio a la derecha */
+}
+
+.header-txt h1 {
+  font-family: "Special Gothic", sans-serif; /* Tipografía específica */
+  font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho personalizados (semibold, semicondensed) */
+  font-size: 78px;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.header-txt h2 {
+  font-family: "Special Gothic", sans-serif; /* Tipografía específica */
+  font-optical-sizing: auto;             /* Ajuste óptico automático de la fuente variable */
+  font-variation-settings: "wght" 700, "wdth" 87.5; /* Peso y ancho personalizados (semibold, semicondensed) */
+  font-size: 38px;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.header-txt p {
+  font-variation-settings: "wght" 500, "wdth" 75; /* Peso y ancho personalizados (medium, condensed) */
+  font-size: 22px;
+  color: #C1C1C1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  background: linear-gradient(135deg, #0044ff 0%, #00ccff 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0022aa 0%, #00eaff 100%);
+  box-shadow: 0 0 30px
+}
+
+.bullet {
+  position: relative;
+  padding-left: 16px; /* espacio para la viñeta */
+}
+
+.bullet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;             /* alineación vertical */
+  width: 8px;
+  height: 8px;
+  background-color: #00ccff; /* color de la viñeta */
+  border-radius: 50%;        /* círculo perfecto */
+}
+
+/* Scroll */
+#inicio {
+  scroll-margin-top: 140px;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+#equipo {
+  scroll-margin-top: 120px;
+  margin-top: 120px;
+
+}
+
+#futuro {
+  margin-bottom: 200px; /* espacio extra debajo */
+}
