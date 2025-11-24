@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;   /* Desplazamiento suave al navegar */
+  scrollbar-gutter: stable; /* Reserva espacio para la barra lateral de scroll del navegador sin depender de su presencia */
 }
 
 body {
@@ -163,3 +164,4 @@ section {
 #futuro {
   margin-bottom: 200px; /* espacio extra debajo */
 }
+
