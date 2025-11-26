@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;   /* Desplazamiento suave al navegar */
-  scrollbar-gutter: stable; /* Reserva espacio para la barra lateral de scroll del navegador sin depender de su presencia */
+  scrollbar-gutter: stable; /* reserva espacio para la barra lateral de scroll del navegador sin depender de su presencia*/
 }
 
 body {
@@ -77,8 +77,9 @@ img {
 }
 
 .header-txt {
-  flex-basis: 50%;           /* Ocupa mitad del ancho */
-  padding-right: 20%;        /* Espacio a la derecha */
+  flex: 1 1 50%;   /* igual que glass-text */
+  padding-right: 0; /* elimina el 20% que rompe el balance */
+  align-items: center;       /* centra horizontalmente */
 }
 
 .header-txt h1 {
@@ -164,4 +165,3 @@ section {
 #futuro {
   margin-bottom: 200px; /* espacio extra debajo */
 }
-
