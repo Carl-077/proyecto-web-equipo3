@@ -71,14 +71,14 @@ img {
 
 .header-content {
   display: flex;
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: 150px;
+  margin-bottom: 105px; /* 70 px + 35 px*/
   align-items: center;
 }
 
 .header-txt {
-  flex: 1 1 50%;   /* igual que glass-text */
-  padding-right: 0; /* elimina el 20% que rompe el balance */
+  flex: 1 1 40%;   /* igual que glass-text */
+  padding-right: 100px; /* Espacio 100 px */
   align-items: center;       /* centra horizontalmente */
 }
 
@@ -156,12 +156,15 @@ section {
   scroll-margin-top: 120px;
 }
 
-#equipo {
-  scroll-margin-top: 120px;
-  margin-top: 120px;
-
+/* Margen de espacio al final */
+#futuro {
+  margin-bottom: 200px; /* espacio extra debajo */
 }
 
-#futuro {
+#sugerencias {
+  margin-bottom: 200px; /* espacio extra debajo */
+}
+
+#integrantes {
   margin-bottom: 200px; /* espacio extra debajo */
 }

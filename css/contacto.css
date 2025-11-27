@@ -1,13 +1,5 @@
 .formulario-retro {
-  background: linear-gradient(160deg, #0040ca56 0%, rgba(255, 255, 255, 0.1) 50%);/* Fondo semitransparente*/
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  padding: 60px 40px;
-  max-width: 1200px;
   margin-top: 120px;
-  color: #1F0C42;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

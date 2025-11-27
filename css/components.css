@@ -186,14 +186,6 @@ body.fonts-loaded .glass-header ul li {
   gap: 20px; /* Espacio entre cada imagen */
 }
 
-.glass-image video {
-  width: 100%;
-  height: 350px;            /* Altura fija */
-  border-radius: 15px;
-  margin: 0px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.473);
-  object-fit: cover;        /* Recorta para llenar el contenedor */
-}
 /* ===========================
    Descripción de imagen
    =========================== */
@@ -205,6 +197,22 @@ body.fonts-loaded .glass-header ul li {
   text-align: center; /* Texto centrado */
   width: 100%; /* Ocupa todo el ancho del contenedor */
   border-radius: 0 0 15px 15px; /* Bordes inferiores redondeados */
+}
+
+/* ===========================
+   Contenedor de video
+   =========================== */
+/* altura fija solo para el contenedor de Vimeo */
+.vimeo {
+  height: 320px;       /* o 400px según prefieras */
+  display: flex;
+}
+
+.vimeo iframe {
+  width: 105%;
+  height: 100%;        /* ocupa todo el alto del contenedor */
+  border: none;
+  display: block;
 }
 
 /* ===========================
@@ -377,13 +385,6 @@ input[type="checkbox"] {
     margin-bottom: 12px;
   }
 
-  .header-img img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 16px 0;
-  }
-
   .btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -435,6 +436,13 @@ input[type="checkbox"] {
     padding: 8px 12px;
     text-align: center;
     width: 100%;
+  }
+
+  .vimeo iframe {
+  width: 160%;
+  height: 100%;        /* ocupa todo el alto del contenedor */
+  border: none;
+  display: block;
   }
 
   .footer-container {
