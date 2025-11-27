@@ -439,7 +439,7 @@ input[type="checkbox"] {
   }
 
   .vimeo iframe {
-  width: 160%;
+  width: 180%;
   height: 100%;        /* ocupa todo el alto del contenedor */
   border: none;
   display: block;
