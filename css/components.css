@@ -369,6 +369,25 @@ input[type="checkbox"] {
     margin-bottom: 12px;
   }
 
+  .header-content {
+    flex-direction: column;   /* texto arriba, galería abajo */
+    padding: 30px 20px;       /* menos padding */
+    margin: 60px auto 20px;   /* menos margen superior */
+  }
+
+  .header-gallery {
+    flex: 1 1 100%;           /* ocupa todo el ancho */
+    max-width: 500px;         /* límite visual */
+    height: auto;             /* altura automática */
+    margin-top: 20px;         /* separación respecto al texto */
+  }
+
+  .slide img {
+    max-height: 200px;        /* más compacto en móvil */
+    border-radius: 12px;
+  }
+
+
   .btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -411,7 +430,7 @@ input[type="checkbox"] {
 
   .glass-image img {
     width: 100%;
-    height: 100%;             /* Ajusta altura según contenedor */
+    height: 100%;             /* sin altura fija */
     border-radius: 15px 15px 0 0; /* solo esquinas superiores redondeadas */
   }
 
