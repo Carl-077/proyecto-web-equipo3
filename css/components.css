@@ -369,29 +369,6 @@ input[type="checkbox"] {
     margin-bottom: 12px;
   }
 
-  .header-gallery {
-    flex: 1 1 100%;       /* ocupa todo el ancho en móvil */
-    max-width: 500px;     /* límite visual */
-    height: 300px;         /* altura automática según imagen */
-    margin-top: 16px;     /* separación respecto al texto */
-  }
-
-  .slides-track {
-    width: 100%;          /* track se ajusta al ancho */
-    height: auto;
-  }
-
-  .slide {
-    flex: 0 0 100%;       /* cada slide ocupa todo el ancho */
-  }
-
-  .slide img {
-    width: 100%;
-    height: auto;         /* mantiene proporción natural */
-    max-height: 220px;    /* más bajo en móvil */
-    border-radius: 12px;  /* bordes más suaves */
-  }
-
   .btn {
     font-size: 16px;
     padding: 10px 20px;
@@ -434,7 +411,7 @@ input[type="checkbox"] {
 
   .glass-image img {
     width: 100%;
-    height: auto;             /* sin altura fija */
+    height: 100%;             /* Ajusta altura según contenedor */
     border-radius: 15px 15px 0 0; /* solo esquinas superiores redondeadas */
   }
 
