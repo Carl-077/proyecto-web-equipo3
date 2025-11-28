@@ -372,7 +372,7 @@ input[type="checkbox"] {
   .header-gallery {
     flex: 1 1 100%;       /* ocupa todo el ancho en móvil */
     max-width: 500px;     /* límite visual */
-    height: auto;         /* altura automática según imagen */
+    height: 300px;         /* altura automática según imagen */
     margin-top: 16px;     /* separación respecto al texto */
   }
 
