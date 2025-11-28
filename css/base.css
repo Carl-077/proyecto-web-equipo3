@@ -64,22 +64,24 @@ img {
 /* ===========================
    Layout general
    =========================== */
-.alineado-con-nav {
-  max-width: 1200px;
-  margin: 0 auto;            /* Centrado horizontal */
-}
 
 .header-content {
-  display: flex;
-  margin-top: 150px;
-  margin-bottom: 105px; /* 70 px + 35 px*/
-  align-items: center;
+  width: 100%;
+  max-width: 1200px;                     /* Ancho máximo de la sección */
+  margin: 120px auto 35px;  /* margen superior 120px, centrado horizontal, inferior 35px */
+  padding: 60px 40px;                    /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+  backdrop-filter: blur(20px);           /* Difumina el fondo detrás del contenedor */
+  border-radius: 20px;                   /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  display: flex;                         /* Activa flexbox para organizar contenido */
+  gap: 30px;                             /* Espacio entre elementos hijos */
+  align-items: flex-start;
+  color: #1F0C42;                        /* Color de texto por defecto dentro de la sección */
 }
 
 .header-txt {
-  flex: 1 1 40%;   /* igual que glass-text */
-  padding-right: 100px; /* Espacio 100 px */
-  align-items: center;       /* centra horizontalmente */
+  flex: 1 1 50%;   /* igual que glass-text */
+  align-items: left;       /* centra horizontalmente */
 }
 
 .header-txt h1 {
@@ -110,6 +112,49 @@ img {
   color: #C1C1C1;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* Contenedor glass para galería */
+.header-gallery {
+  flex: 1 1 45%;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.slides-track {
+  display: flex;
+  width: 100%; 
+  height: 100%;
+  animation: slideTrack 25s infinite;
+}
+
+.slide {
+  flex: 0 0 100%; /* cada slide ocupa todo el ancho */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;          /* mantiene proporción */
+  max-height: 312px;     /* límite para no exceder el contenedor */
+  object-fit: cover;     /* recorte limpio si sobra espacio */
+  border-radius: 15px;
+}
+
+/* Animación de deslizamiento */
+@keyframes slideTrack {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(-400%); }
 }
 
 .btn {
@@ -162,9 +207,9 @@ section {
 }
 
 #sugerencias {
-  margin-bottom: 200px; /* espacio extra debajo */
+  margin-bottom: 120px; /* espacio extra debajo */
 }
 
 #integrantes {
-  margin-bottom: 200px; /* espacio extra debajo */
+  margin-bottom: 120px; /* espacio extra debajo */
 }

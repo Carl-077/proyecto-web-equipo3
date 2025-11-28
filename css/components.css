@@ -200,22 +200,6 @@ body.fonts-loaded .glass-header ul li {
 }
 
 /* ===========================
-   Contenedor de video
-   =========================== */
-/* altura fija solo para el contenedor de Vimeo */
-.vimeo {
-  height: 320px;       /* o 400px según prefieras */
-  display: flex;
-}
-
-.vimeo iframe {
-  width: 105%;
-  height: 100%;        /* ocupa todo el alto del contenedor */
-  border: none;
-  display: block;
-}
-
-/* ===========================
    Footer
    =========================== */
 .site-footer {
@@ -436,13 +420,6 @@ input[type="checkbox"] {
     padding: 8px 12px;
     text-align: center;
     width: 100%;
-  }
-
-  .vimeo iframe {
-  width: 180%;
-  height: 100%;        /* ocupa todo el alto del contenedor */
-  border: none;
-  display: block;
   }
 
   .footer-container {
