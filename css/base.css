@@ -66,7 +66,6 @@ img {
    =========================== */
 
 .header-content {
-  width: 100%;
   max-width: 1200px;                     /* Ancho máximo de la sección */
   margin: 120px auto 35px;  /* margen superior 120px, centrado horizontal, inferior 35px */
   padding: 60px 40px;                    /* Espaciado interno (arriba/abajo, izquierda/derecha) */

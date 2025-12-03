@@ -300,7 +300,7 @@ input[type="checkbox"] {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  width: 95%; /* aire lateral móvil, si se quiere que ocupe toda la pantalla modificarlo a 100%*/
   max-width: 1200px;   /* igual que las secciones */
   margin-top: 20px;
   padding: 0 35px;
@@ -337,12 +337,12 @@ input[type="checkbox"] {
     flex-direction: column;   /* apila texto e imagen */
     align-items: center;      /* centra horizontalmente */
     text-align: center;
-    width: 100%;
+    width: 95%; /* aire lateral móvil, si se quiere llenar toda la pantalla eliminar*/ 
     max-width: 1200px;        /* igual que las secciones */
     margin-top: 140px; /* 70px de la barra + 20px de su margen + aire extra */
-    margin-bottom: 35px; /* igual que las secciones */
-    padding: 0 16px;          /* mismo padding lateral */
+    margin-bottom: 0px; /* elimina el padding inferior de 35px de la versión de escritorio */
     box-sizing: border-box;
+    padding: 30px 20px;          /* mismo padding lateral */
   }
 
   .header-txt {
@@ -359,7 +359,7 @@ input[type="checkbox"] {
   }
 
   .header-txt h2 {
-    font-size: 28px !important;
+    font-size: 26px !important;
     line-height: 1.2;
     margin-bottom: 10px;
   }
@@ -368,25 +368,6 @@ input[type="checkbox"] {
     font-size: 18px;
     margin-bottom: 12px;
   }
-
-  .header-content {
-    flex-direction: column;   /* texto arriba, galería abajo */
-    padding: 30px 20px;       /* menos padding */
-    margin: 60px auto 20px;   /* menos margen superior */
-  }
-
-  .header-gallery {
-    flex: 1 1 100%;           /* ocupa todo el ancho */
-    max-width: 500px;         /* límite visual */
-    height: auto;             /* altura automática */
-    margin-top: 20px;         /* separación respecto al texto */
-  }
-
-  .slide img {
-    max-height: 200px;        /* más compacto en móvil */
-    border-radius: 12px;
-  }
-
 
   .btn {
     font-size: 16px;
@@ -400,6 +381,7 @@ input[type="checkbox"] {
     text-align: center;       /* centra el texto */
     gap: 20px;                /* espacio entre texto e imagen */
     padding: 30px 20px;       /* reduce padding para móvil */
+    width: 85%; /* aire lateral móvil, si se quiere llenar toda la pantalla eliminar*/
   }
 
   .glass-section h2,
@@ -430,7 +412,7 @@ input[type="checkbox"] {
 
   .glass-image img {
     width: 100%;
-    height: 100%;             /* sin altura fija */
+    height: auto;             /* sin altura fija */
     border-radius: 15px 15px 0 0; /* solo esquinas superiores redondeadas */
   }
 
@@ -439,6 +421,18 @@ input[type="checkbox"] {
     padding: 8px 12px;
     text-align: center;
     width: 100%;
+  }
+
+  .header-gallery {
+  height: 182.14px;
+  }
+
+  .slide {
+    flex: 0 0 100%; /* cada slide ocupa todo el ancho */
+  }
+
+  .slide img {
+    height: 100%; /* cubre toda la altura del contenedor */
   }
 
   .footer-container {
@@ -466,5 +460,17 @@ input[type="checkbox"] {
   .footer-copy {
     margin-top: 20px;
     text-align: center;
+  }
+
+  #futuro {
+    margin-bottom: 50px; /* espacio extra debajo */
+  }
+  
+  #sugerencias {
+    margin-bottom: 50px; /* espacio extra debajo */
+  }
+  
+  #integrantes {
+    margin-bottom: 50px; /* espacio extra debajo */
   }
 }
